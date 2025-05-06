@@ -5,8 +5,8 @@ let isInitialized = false; // Flag to track if Braze has been initialized
 export function initializeBraze() {
   if (isInitialized) return; // Avoid re-initializing
 
-  braze.initialize('aa31f20d-7290-48da-a7db-56c5fffc15b5', {
-    baseUrl: 'sondheim.braze.com',
+  braze.initialize(''YOUR-API-KEY', {
+  baseUrl: 'YOUR-ENDPOINT',
     enableLogging: true,
     allowUserSuppliedJavascript: true
   });
